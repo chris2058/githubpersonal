@@ -1,0 +1,356 @@
+/*General Settings */
+
+*{
+    font: "arial";
+}
+html {
+    background-color: black;
+}
+body {
+    opacity: 1;
+    transition: 2s opacity;
+}
+        body.fade {
+        opacity: 0.3;
+        transition: none;
+        }
+#overallContainer{
+    padding: 0%;
+    background-color: rgb(95, 95, 95);
+    height: 100vh;
+}
+
+/*Home Page */
+
+#homeContainer {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background-image: url(/Assets/Images/HK\ city\ background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    margin-bottom: 0px;
+    margin-top: 0px;
+ }
+        #homeTitle {
+            font-weight: 600;
+            font-size: 5vh 5vw;
+        }
+        #homeBar {
+            border-top: 3px solid rgba(2, 2, 7, 0.883);
+            width: 2.5%;
+            height: 3%;
+        }
+        #homeText {
+            font-size: 2vh;
+            margin-bottom: 2%;
+        }
+        #homeBtn {
+            background-color: rgba(22, 22, 22, 0.883);
+            color: white;
+            border-radius: 10%/100%;
+            font-size: 2vh;
+            font-weight: 600;
+            box-shadow: 0 5px #666;
+            text-decoration: none;
+        }
+                #homeBtn:hover {
+                    background-color:rgba(255, 255, 255, 0.753);
+                    text-decoration: none;
+                    color: black;
+                    box-shadow: 0 5px #666;
+                }
+                #homeBtn:active {
+                    background-color: rgba(255, 255, 255, 0.753);
+                    box-shadow: 0 5px #666;
+                    transform: translateY(4px);
+                }
+
+/*'Services' and 'About' Pages */
+
+#mainSection {
+    height: auto;
+    overflow-y: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background-color: rgb(95, 95, 95);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: black;
+    margin-bottom: 0px;
+    margin-top: 50px;
+    }
+        #mainTitle {
+            font-weight: 200;
+            font-size: 20vh 20vw;
+        }
+        #mainBar {
+            border-top: 3px solid rgb(197, 197, 197);
+            width: 2.5%;
+            height: 3%;
+            margin-bottom: 5vh;
+        }
+        #cardContainer{
+            color:black;
+            height: 23vh;
+            margin-bottom: 5vh;
+        }
+                    #glyphicon1 {
+                        color:rgb(182, 159, 31);
+                    }
+                    #glyphicon2 {
+                        color:rgb(29, 18, 129);
+                    }
+                    #glyphicon3 {
+                        color:rgb(149, 15, 15);
+                    }
+                    #glyphicon4 {
+                        color:rgb(197, 197, 197);
+                    }
+                    #glyphicon5 {
+                        color:rgb(73, 6, 75);
+                    }
+                            @keyframes bounce {
+                                80% {
+                                opacity: 0.5;
+                                transform: translateY(-5px);
+                                }
+                                100% {
+                                opacity: 1;
+                                transform: translateY(5px);
+                                }
+                            }                            
+                            .bounce {
+                            -moz-animation: bounce 4s infinite;
+                            -webkit-animation: bounce 4s infinite;
+                            animation: bounce 4s infinite;
+                            }                            
+                    #cardBody{
+                        height: 10vh;
+                    }
+                    #cardButton{
+                        background-color: rgba(22, 22, 22, 0.883);
+                        color: white;
+                        border-radius: 10%/100%;
+                        font-size: 0.8vh;
+                        font-weight: 600;
+                    }
+                            #cardButton:hover {
+                                background-color:rgba(255, 255, 255, 0.753);
+                                text-decoration: none;
+                                color: black;
+                    }
+                    #cardButtonModal1{
+                        height: 30vh;
+                        width: 100%;
+                        background-color: black;
+                        color: white;
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                    }
+                    #cardButtonModal2{
+                        height: 30vh;
+                        width: 100%;
+                        background-color: black;
+                        color: white;
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                    }
+                    #cardButtonModal3{
+                        height: 30vh;
+                        width: 100%;
+                        background-color: black;
+                        color: white;
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                    }
+                    #cardButtonModal4{
+                        height: 30vh;
+                        width: 100%;
+                        background-color: black;
+                        color: white;
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                    }
+                    #cardButtonModal5{
+                        height: 70vh;
+                        width: 100%;
+                        background-color: black;
+                        color: white;
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                    }
+                    #cardButtonModal6{
+                        height: 70vh;
+                        width: 100%;
+                        background-color: black;
+                        color: white;
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                    }
+                    #cardButtonModal7{
+                        height: 70vh;
+                        width: 100%;
+                        background-color: black;
+                        color: white;
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                    }
+                    #cardButtonModal8{
+                        height: 70vh;
+                        width: 100%;
+                        background-color: black;
+                        color: white;
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                    }
+
+/*'About' Page */
+
+#photoSection {
+    height: auto;
+    overflow-y: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background-color: rgb(29, 29, 29);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: black;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    }
+            #photoTitle {
+                font-weight: 200;
+                font-size: 20vh 20vw;
+                color: white;
+            }
+            #photoRow{
+            height: auto;
+            width: 100%;
+        }
+            #photoContainer{
+            color:black;
+            height: 30vh;
+            margin-bottom: 5vh;
+            display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                align-content: center;
+            }
+            #photo{
+                height: 30vh;
+                width: auto;
+                border-radius: 10%;
+            }
+                    #photo:hover {
+                        border-radius: 30%;
+                        height: 40vh;
+                    }
+ 
+/*'Contact' Page */
+
+#contactMainSection {
+    height: auto;
+    overflow-y: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background-color: rgb(95, 95, 95);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: black;
+    margin-bottom: 20px;
+    margin-top: 45px;
+    }
+        #contactMainTitle {
+            font-weight: 200;
+            font-size: 20vh 20vw;
+        }
+        #contactMainBar {
+            border-top: 3px solid rgb(197, 197, 197);
+            width: 2.5%;
+            height: 3%;
+            margin-bottom: 5vh;
+        }
+        #contactCardContainer{
+            color:black;
+            height: auto;
+            margin-bottom: 3vh;
+        }
+#contactLowerSection {
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(95, 95, 95);
+    color: black;
+    }
+        #contactJumbo {
+        height: auto;
+        width: 60%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url(/Assets/Images/Map.png);
+        background-size: cover;
+        background-position: center;
+        color: black;
+        margin-bottom: 0px;
+        margin-top: 10px;
+        border: solid 40px rgb(29, 29, 29);
+        }
+        #contactJumboBtn {
+            background-color: rgb(214, 90, 8);
+            color: rgb(250, 250, 250);
+            border-radius: 10%/100%;
+            font-size: 10px;
+            font-weight: 600;
+            text-decoration: none;
+            margin-top: 20vh;
+            margin-bottom: 2vh;
+        }
+                #contactJumboBtn:hover {
+                    background-color:rgb(255, 255, 255);
+                    text-decoration: none;
+                    color: black;
+                    }
+
+                    
